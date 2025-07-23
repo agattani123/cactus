@@ -13,15 +13,16 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  final TextEditingController _controller = TextEditingController();
-  final ScrollController _scrollController = ScrollController();
-  bool _hasImage = false;
+  bool _hasImage = true;
+  // final TextEditingController _controller = TextEditingController();
+  // final ScrollController _scrollController = ScrollController();
+  // bool _hasImage = false;
 
-  @override
-  void initState() {
-    super.initState();
-    widget.cactusService.messages.addListener(_scrollToBottom);
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   widget.cactusService.messages.addListener(_scrollToBottom);
+  // }
 
   @override
   void dispose() {
